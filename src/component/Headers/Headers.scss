@@ -1,0 +1,113 @@
+@import "../../assets/Scss/Variables.scss";
+@import "../../assets/Scss/Mixin.scss";
+.header__Content {
+    .ul__content {
+        display: flex;
+        list-style: none;
+        font-size: $fs-1 + 2;
+        font-weight: $fw-3;
+        li {
+            a{
+                margin: 0 $mg-1;
+                color: $white;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+.header__user {
+    font-size: $fs-1 + 2;
+    font-weight: $fw-3;
+    display: flex;
+    .login,
+    .register {
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        color: $white;
+        &:hover {
+            color: $black;
+        }
+    }
+    .register {
+        margin-left: $mg-1;
+    }
+}
+.logo {
+    .brand__logo {
+        color: $white;
+        font-size: $fs-2 + 2;
+        font-weight: $fw-3;
+    }
+    span {
+        color: $black;
+    }
+}
+
+@include responsive("sm") {
+    .header__Content {
+        display: none;
+    }
+}
+.title__drawer {
+    color: $red;
+    margin-bottom: 0;
+    span {
+        color: $black;
+    }
+}
+.list__drawer {
+    list-style: none;
+    padding: 0;
+    li {
+        font-size: $fs-1 + 2;
+        margin: 10px 0;
+        text-align: center;
+        display: block;
+        a, .user__Name {
+            color: $red;
+            font-weight: $fw-3;
+            margin-bottom: 0;
+        }
+        .logout{
+            cursor: pointer;
+            color: $black;
+            font-weight: $fw-3;
+        }
+    }
+}
+.button__drawer {
+    display: none;
+    visibility: hidden;
+    button {
+        &:hover {
+            color: $white;
+            border: 1px solid $white !important;
+        }
+    }
+}
+@include responsive("sm") {
+    .button__drawer {
+        display: block;
+        visibility: visible;
+    }
+    .schedule,
+    .user__info {
+        display: none;
+        visibility: hidden;
+    }
+}
+@include responsive("md") {
+    .header__layout {
+        padding: 0 20px !important;
+    }
+}

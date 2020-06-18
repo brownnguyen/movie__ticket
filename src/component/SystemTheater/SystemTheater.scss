@@ -1,0 +1,48 @@
+@import "../../assets/Scss/Variables.scss";
+.theater__logo__left {
+    .ant-tabs-tabpane {
+        padding-left: 0 !important;
+    }
+    .theater__info {
+        .ant-tabs-tab {
+            text-align: left !important;
+            &:hover {
+                color: $red;
+            }
+        }
+        .ant-tabs-tab-active {
+            color: $red;
+        }
+        .movie__name__img {
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            .movie__img {
+                padding-right: 20px;
+            }
+            .movie__name {
+                font-size: $fs-2;
+                font-weight: bold;
+            }
+        }
+        .div__schedule {
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            margin: 0 20px;
+            .schedule__movie {
+                display: inline-block;
+                padding: 5px 15px;
+                margin: 10px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                &:hover{
+                    color:$red;
+                    border-color: $red ;
+                }
+            }
+        }
+    }
+}

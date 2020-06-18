@@ -1,0 +1,66 @@
+@import "../../assets/Scss/Variables.scss";
+.user__register {
+    .register__col {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .register__form {
+            text-align: center;
+            padding: 40px;
+            padding-top: 20px;
+            .ant-form-item-control-input {
+                .ant-input {
+                    padding: 10px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+                .ant-input-password {
+                    border-radius: 5px;
+                    padding: 0;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    .ant-input-suffix {
+                        padding-right: 10px;
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+                .register__button {
+                    line-height: 0;
+                    padding: 20px;
+                    background-color: $red;
+                    color: $white;
+                    font-size: $fs-2;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    &:hover {
+                        border-color: transparent;
+                    }
+                    span {
+                        margin: auto;
+                    }
+                }
+            }
+            .logo__register__title {
+                font-size: $fs-2 + 8;
+                color: $red;
+                span {
+                    color: $black;
+                }
+            }
+            .register__title {
+                font-size: $fs-3 + 10;
+            }
+        }
+    }
+}

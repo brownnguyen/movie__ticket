@@ -1,0 +1,63 @@
+@import "../../assets/Scss/Variables.scss";
+.user__login {
+    .login__col {
+        background-color: $white;
+        padding: 40px;
+        padding-top: 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .login__form {
+            text-align: center;
+            .logo__login__title {
+                font-size: $fs-3;
+                text-align: center;
+                margin: 15px auto;
+                margin-top: 0;
+                color: $red;
+                span {
+                    color: $black;
+                }
+            }
+            .login__title {
+                font-size: $fs-3 + 10;
+                text-align: center;
+            }
+            .login__input {
+                padding: 10px;
+                border-radius: 5px;
+                &:focus {
+                    border-color: $red;
+                }
+                &:hover {
+                    border-color: $red;
+                }
+            }
+            .ant-input-affix-wrapper:focus,
+            .ant-input-affix-wrapper-focused {
+                outline: none !important;
+                box-shadow: none;
+            }
+            .login-form-button {
+                line-height: 0;
+                padding: 20px;
+                background-color: $red;
+                color: $white;
+                font-size: $fs-2;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                &:hover {
+                    border-color: transparent;
+                }
+                span {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

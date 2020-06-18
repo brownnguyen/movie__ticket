@@ -1,0 +1,28 @@
+{
+    "image": [
+        {
+            "id": 1,
+            "name": "cay-uoc-nguyen",
+            "src": "./image/giai-cuu-cay-uoc-nguyen-15919329473387.jpg",
+            "trailer": "https://www.youtube.com/embed/It3siK0DAzg"
+        },
+        {
+            "id": 2,
+            "name": "gia-tai-toi-loi",
+            "src": "./image/nhat-ban-15916053152120.png",
+            "trailer": "https://www.youtube.com/embed/lY_1ptUWQFw"
+        },
+        {
+            "id": 3,
+            "name": "sinh-nhat-chet-choc",
+            "src": "./image/sinh-nhat-chet-choc-2-15916767035273.jpg",
+            "trailer": "https://www.youtube.com/embed/ecYILs8MaQ4"
+        },
+        {
+            "id":4,
+            "name":"tham-hoa-kep",
+            "src":"./image/tham-hoa-kep-15916128173275.jpg",
+            "trailer":"https://www.youtube.com/embed/1gazk877yCw"
+        }
+    ]
+}

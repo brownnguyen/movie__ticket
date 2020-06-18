@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Home from './pages/Home/Home';
+import HomeTemplate from './Templates/HomeTemplate';
+import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
+import MovieDetail from './pages/MovieDetail/MovieDetail';
+import UserTemplate from './Templates/UserTemplate';
+import Login from './component/Login/Login';
+import Register from './component/Register/Register';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <HomeTemplate path="/home" exact component={Home} />
+        <HomeTemplate path="/chitietphim/:movieId" exact component={MovieDetail} />
+        <UserTemplate path="/login" exact component={Login} />
+        <UserTemplate path="/register" exact component={Register}/>
+        <HomeTemplate path="/" exact component={Home} />
+        <Redirect to="/" />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

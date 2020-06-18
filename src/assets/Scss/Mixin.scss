@@ -1,0 +1,14 @@
+$breakpoints: (
+    'xs': 575px,
+    "sm": 767px,
+    "md": 991px,
+    "lg": 1199px
+);
+@mixin responsive ($screen) {
+    @if (map-has-key($breakpoints, $screen)){
+        $value: map-get($breakpoints, $screen);
+        @media screen and (max-width: $value){
+            @content
+        }
+    }
+}
